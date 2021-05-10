@@ -3,9 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>Hello wasm-pack!</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <noscript>This page contains webassembly and javascript content, please enable javascript in your browser.</noscript>
     <script src="./bootstrap.js"></script>
+    <h1>Base Emoji ♐🌛🌸🌟😟♓🌲🌴🌯🌮</h1>
+    <p>Yes, it is exactly what you think it is. A new way of encoding text.</p>
+
+    <h2>Converter</h2>
+
+    <textarea id="boringtext" placeholder="Boring text"></textarea>
+    <div class="row">
+      <button type="button" id="add_fun"> <span id="copy-button-feedback"></span>⏬ Add Fun</button>
+      <button type="button" id="remove_fun"><span id="copy-button-feedback"></span>Be Dull ⏫️</button>
+    </div>
+    <textarea id="funtext" placeholder="Fun base encoded text"></textarea>
+    <button type="button" id="copy-button"> <span id="copy-button-feedback"></span>Copy to clipboard ✂️</button>
   </body>
 </html>
